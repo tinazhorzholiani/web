@@ -1,0 +1,126 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: "Gill Sans", sans-serif;
+    color: rgb(37, 62, 85);
+}
+
+.logo img {
+    height: 40px;
+    margin-left: 20px;
+}
+
+.picture {
+    display: none;
+    max-width: none;
+    max-height: 80vh;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.wwd-container {
+    height: 70px;
+    position: relative;
+}
+
+.wwd-border {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 18px;
+    border: 0px solid rgb(196, 196, 196);
+    background-color: rgb(238, 237, 237);
+    font-size: 10px;
+    color: rgb(37, 62, 85);
+    /* Text color adjusted */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.big-text {
+    position: relative;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+    font-size: 36px;
+}
+
+.big-text-underlined {
+    position: relative;
+}
+
+.big-text-underlined::after {
+    content: '';
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    border-bottom: 1rem solid rgb(244, 211, 157);
+    z-index: -1;
+}
+
+/* Additional styles for the boxes */
+.box {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f8f9fa;
+    margin-bottom: 20px;
+}
+
+.box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.learn-more a {
+    text-decoration: none;
+    color: rgb(37, 62, 85);
+    font-weight: bold;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: rgb(37, 62, 85);
+    margin: 10px 0;
+}
+
+.minilogo img {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.footer {
+    padding: 10px 0;
+    background-color: #f8f9fa;
+}
+
+.footer .social-icons a {
+    font-size: 1.5rem;
+    color: rgb(37, 62, 85);
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.footer .social-icons a:last-child {
+    margin-right: 0;
+}
