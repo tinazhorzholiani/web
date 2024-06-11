@@ -1,0 +1,20 @@
+<div class="search-box">
+    <input type="text" id="search-input" placeholder="Search...">
+    <button onclick="search()">Search</button>
+</div>
+
+.search-box {
+display: flex;
+align-items: center;
+}
+
+#search-input {
+padding: 10px;
+margin-right: 10px;
+width: 200px;
+}
+
+function search() {
+const query = document.getElementById('search-input').value;
+alert('Searching for: ' + query);
+}

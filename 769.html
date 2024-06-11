@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Momento Payment Integration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .payment-option {
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .payment-option:hover {
+            transform: scale(1.05);
+        }
+
+        .faq-section {
+            background-color: #f9f9f9;
+            padding: 40px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="text-center my-5">
+        <img src="logo.png" alt="Momento Logo" class="mb-3"> <!-- Replace with your logo path -->
+        <h1 class="display-5">Easily connect your Momento account with favorite payments</h1>
+        <p>We have a range of payment methods you can use to make transactions and receive payments easily.</p>
+    </header>
+
+    <div class="container my-5">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="payment-option">
+                    <img src="visa.png" alt="VISA" class="mb-3"> <!-- Replace with your icon path -->
+                    <h5>VISA</h5>
+                    <p>Simplify your international business transactions with Momento.</p>
+                    <a href="#" class="btn btn-outline-primary">Read more</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="payment-option">
+                    <img src="applepay.png" alt="Apple Pay" class="mb-3"> <!-- Replace with your icon path -->
+                    <h5>Apple Pay</h5>
+                    <p>Streamline global business transactions through Apple Pay and Momento.</p>
+                    <a href="#" class="btn btn-outline-primary">Read more</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="payment-option">
+                    <img src="mastercard.png" alt="MasterCard" class="mb-3"> <!-- Replace with your icon path -->
+                    <h5>MasterCard</h5>
+                    <p>Enhance cross-border trade efficiency with MasterCard.</p>
+                    <a href="#" class="btn btn-outline-primary">Read more</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="payment-option">
+                    <img src="stripe.png" alt="Stripe" class="mb-3"> <!-- Replace with your icon path -->
+                    <h5>Stripe</h5>
+                    <p>Optimize international business dealings with Stripe.</p>
+                    <a href="#" class="btn btn-outline-primary">Read more</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="payment-option">
+                    <img src="skrill.png" alt="Skrill" class="mb-3"> <!-- Replace with your icon path -->
+                    <h5>Skrill</h5>
+                    <p>Facilitate seamless global transactions through Skrill Payments.</p>
+                    <a href="#" class="btn btn-outline-primary">Read more</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="payment-option">
+                    <img src="paypal.png" alt="PayPal" class="mb-3"> <!-- Replace with your icon path -->
+                    <h5>PayPal</h5>
+                    <p>Elevate international trade simplicity with PayPal.</p>
+                    <a href="#" class="btn btn-outline-primary">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="#" class="btn btn-success btn-lg">Explore All Payments</a>
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Frequently Asked Questions about Momento</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Is Momento a Bank?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Momento is not a bank but a payment institution regulated by the Financial Conduct
+                            Authority. We offer a wide range of payment solutions for businesses worldwide.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Who can open a Momento account?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Any business or individual can open a Momento account to start making and receiving payments
+                            globally.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            How do international payments work?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            International payments with Momento are straightforward. You can send and receive payments
+                            in multiple currencies efficiently and securely.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-success">Check more FAQs</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

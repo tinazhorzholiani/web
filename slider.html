@@ -1,0 +1,58 @@
+<div class="slider">
+    <div class="slides">
+        <div class="slide">Slide 1</div>
+        <div class="slide">Slide 2</div>
+        <div class="slide">Slide 3</div>
+    </div>
+    <button class="prev" onclick="prevSlide()">&#10094;</button>
+    <button class="next" onclick="nextSlide()">&#10095;</button>
+</div>
+.slider {
+position: relative;
+width: 300px;
+height: 200px;
+overflow: hidden;
+}
+
+.slides {
+display: flex;
+transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+min-width: 300px;
+height: 200px;
+background: #ccc;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.prev, .next {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background: rgba(0, 0, 0, 0.5);
+color: white;
+border: none;
+padding: 10px;
+cursor: pointer;
+}
+
+.prev {
+left: 10px;
+}
+
+.next {
+right: 10px;
+}
+let currentSlide = 0;
+
+function showSlide(index) {
+const slides = document.querySelector('.slides');
+const totalSlides = document.querySelectorAll('.slide').length;
+if (index >= totalSlides) {
+currentSlide = 0;
+} else if (index < 0) { currentSlide=totalSlides - 1; } else { currentSlide=index; }
+    slides.style.transform='translateX(' + (-currentSlide * 300) + 'px)' ; } function nextSlide() {
+    showSlide(currentSlide + 1); } function prevSlide() { showSlide(currentSlide - 1); } showSlide(currentSlide);

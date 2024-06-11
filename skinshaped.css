@@ -1,0 +1,16 @@
+<div class="block" onclick="toggleBlock(this)">Click to expand</div>.block {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.block.expanded {
+    width: 300px;
+    height: 300px;
+}
+
+function toggleBlock(element) {
+    element.classList.toggle('expanded');
+}
