@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* ცვლადები */
+:root {
+    /* შრიფტის ზომა */
+    --fs-basic: calc((14/16) * 1rem);
+    --fs-basic-smaller: calc((12/16) * 1rem);
+    /* ზომა */
+    --s-btn-min-nav: calc((40/16) * 1rem);
+    --s-btn-radius: calc((3/16) * 1rem);
+    /* სივრცე */
+    --sp-min-nav-item: calc((20/16) * 1rem);
+    --sp-btn-contact-us: calc((20/16) * 1rem);
+}
+
+/* საწყისები */
+body,
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* საერთო */
+.d-header .top-bar,
+.main-nav ul,
+.main-nav li,
+.main-nav li a {
+    display: flex;
+}
+
+.d-header .top-bar {
+    align-items: center;
+}
+
+.main-nav {
+    margin-left: auto;
+}
+
+.main-nav ul {
+    list-style-type: none;
+}
+
+.d-header a {
+    text-decoration: none;
+}
+
+.d-header,
+.btn-contact-us {
+    box-sizing: border-box;
+}
+
+/* კერძო */
+.d-header a {
+    color: white;
+}
+
+.d-header {
+    background-image: url(../photos/kitchen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: var(--fs-basic);
+    min-height: 400px;
+    padding: 20px;
+}
+
+.btn-min-nav {
+    background-color: transparent;
+    border: 1px solid hsla(0, 0%, 100%, .3);
+    border-radius: 50%;
+    color: white;
+    height: var(--s-btn-min-nav);
+    margin-right: var(--sp-min-nav-item);
+    width: var(--s-btn-min-nav);
+}
+
+.main-nav li {
+    margin: 0 var(--sp-min-nav-item);
+    min-height: calc(var(--fs-basic) * 1.5);
+}
+
+.main-nav li a {
+    align-items: end;
+    /* background-color: blueviolet; */
+}
+
+.main-nav li::after {
+    color: white;
+    font-size: calc(var(--fs-basic) / 2);
+}
+
+.main-nav li:nth-of-type(1)::after {
+    content: '01';
+}
+
+.main-nav li:nth-of-type(2)::after {
+    content: '02';
+}
+
+.main-nav li:nth-of-type(3)::after {
+    content: '03';
+}
+
+.main-nav li:nth-of-type(4)::after {
+    content: '04';
+}
+
+.main-nav li:nth-of-type(5)::after {
+    content: '05';
+}
+
+.btn-contact-us {
+    background-color: white;
+    border: none;
+    border-radius: var(--s-btn-radius);
+    font-size: var(--fs-basic-smaller);
+    padding: calc(var(--sp-btn-contact-us) / 2) var(--sp-btn-contact-us);
+}
